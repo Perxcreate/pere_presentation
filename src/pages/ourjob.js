@@ -29,6 +29,7 @@ function OurJobPage({lang, translations}) {
               link="https://lxryfootball.surge.sh"
               image="img/lxry.PNG"
             />
+             <JobCards lang={lang} translations={translations} image="img/faro.PNG" />
           </section>
         </main>
       ) : (
@@ -48,11 +49,12 @@ function OurJobPage({lang, translations}) {
             />
             <JobCards lang={lang} translations={translations} image="img/drama.PNG" />
           </section>
-          <section className="flex-column around">
+          <section className="flex around">
             <JobCards lang={lang} translations={translations}
               link="https://lxryfootball.surge.sh"
               image="img/lxry.PNG"
             />
+            <JobCards lang={lang} translations={translations} image="img/faro.PNG" />
           </section>
         </div>
       )}

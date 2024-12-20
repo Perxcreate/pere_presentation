@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route,useParams, useLocation } from "react-router-dom";
+import { Routes, Route, useParams, useLocation } from "react-router-dom";
 import IndexPage from "./pages/IndexPage";
 import Header from "./components/header";
 import ContactPage from "./pages/contact";
@@ -12,7 +12,7 @@ const translations = {
     en: {
         soon: "Soon",
         hometitle: "Home",
-        jobtitle:"My job",
+        jobtitle:"My works",
         clientstitle:"Clients",
         contacttitle:"Contact me",
         knowme:"Know me",
@@ -20,12 +20,12 @@ const translations = {
         errorback:"Back to home",
         startto:"Start designing",
         future: "your future",
-        about:"I delved into the zeros and ones. It will be because of the infinite learning that programming offers, because of the instant satisfaction it gives me when I get it to work, or because it doesn't feel like work when I'm immersed; but I have found the job that deserves my passion."
+        about:"Programming has allowed me to develop an organized and methodical approach to problem solving. I enjoy the continuous learning process and the satisfaction of seeing how my constant efforts translate into efficient solutions. My passion for programming is based on discipline and persistence, always looking to improve and optimize each project."
         },
       es: {
         soon: "Próximamente",
         hometitle: "Inicio",
-        jobtitle:"Mi trabajo",
+        jobtitle:"Mis trabajos",
         clientstitle:"Clientes",
         contacttitle:"Contáctame",
         knowme:"Conóceme",
@@ -33,7 +33,7 @@ const translations = {
         errorback:"Volver al inicio",
         startto:"Empieza a",
         future: "diseñar tu futuro",
-        about:"Me adentré en los ceros y unos. Será por el aprendizaje infinito que ofrece la programación, por la satisfacción instantánea que me brinda cuando consigo hacerlo funcionar, o porque no parece un trabajo cuando estoy inmerso; pero he encontrado el oficio que merece mi pasión."
+        about:"La programación me ha permitido desarrollar un enfoque organizado y metódico para resolver problemas. Disfruto del proceso de aprendizaje continuo y la satisfacción de ver cómo mis esfuerzos constantes se traducen en soluciones eficientes. Mi pasión por la programación se basa en la disciplina y la persistencia, siempre buscando mejorar y optimizar cada proyecto."
         },
       ca: {
         soon: "Properament",
@@ -46,7 +46,7 @@ const translations = {
         errorback:"Tornar al inici",
         startto:"Comença a",
         future: "dissenyar el teu futur",
-        about:"Em vaig endinsar als zeros i uns. Serà per l'aprenentatge infinit que ofereix la programació, per la satisfacció instantània que em brinda quan aconsegueixo fer-ho funcionar, o perquè no sembla una feina quan estic immers; però he trobat l'ofici que mereix la passió."
+        about:"La programació m'ha permès desenvolupar un enfocament organitzat i metòdic per a resoldre problemes. Gaudeixo del procés d'aprenentatge continu i la satisfacció de veure com els meus esforços constants es tradueixen en solucions eficients. La meva passió per la programació es basa en la disciplina i la persistència, sempre buscant millorar i optimitzar cada projecte."
         }
 };
 

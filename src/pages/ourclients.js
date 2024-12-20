@@ -27,6 +27,9 @@ function OurClientsPage({lang, translations}) {
           <Tooltip text={translations[lang].soon}>
             <img className="logo-clients" src="img/logo-drama.png" />
           </Tooltip>
+          <Tooltip text={translations[lang].soon}>
+            <img className="logo-clients" src="img/faro_azul.png" />
+          </Tooltip>
         </div>
       </div>
     </main>
