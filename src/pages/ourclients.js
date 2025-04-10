@@ -27,9 +27,10 @@ function OurClientsPage({lang, translations}) {
           <Tooltip text={translations[lang].soon}>
             <img className="logo-clients" src="img/logo-drama.png" />
           </Tooltip>
-          <Tooltip text={translations[lang].soon}>
+          
+          <a href="https://farocastelldefels.com" target="_blank" rel="nofollow">
             <img className="logo-clients" src="img/faro_azul.png" />
-          </Tooltip>
+            </a>
         </div>
       </div>
     </main>

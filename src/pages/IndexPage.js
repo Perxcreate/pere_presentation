@@ -32,7 +32,16 @@ function IndexPage({lang, translations}) {
           </span>
           <span className="linea3"></span>
         </div>
-
+        <div className="flex">
+          <span className="linea1"></span>
+        <span className="home-titles">
+            <Link className="no-link" target="_blank" rel="nofollow" to={`https://blackjack-arena.com`}>
+              <p>{translations[lang].blackjacktitle}</p>
+            </Link>
+          </span>
+          <span className="linea2"></span>
+          
+        </div>
         <div className="flex">
           <span className="linea1"></span>
           <span className="home-titles">
@@ -41,6 +50,7 @@ function IndexPage({lang, translations}) {
             </Link>
           </span>
           <span className="linea2"></span>
+          
         </div>
 
         <div className="flex agency">

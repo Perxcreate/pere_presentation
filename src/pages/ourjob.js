@@ -29,7 +29,7 @@ function OurJobPage({lang, translations}) {
               link="https://lxryfootball.surge.sh"
               image="img/lxry.PNG"
             />
-             <JobCards lang={lang} translations={translations} image="img/faro.PNG" />
+             <JobCards link="https://farocastelldefels.com" lang={lang} translations={translations} image="img/faro.PNG" />
           </section>
         </main>
       ) : (
@@ -54,7 +54,9 @@ function OurJobPage({lang, translations}) {
               link="https://lxryfootball.surge.sh"
               image="img/lxry.PNG"
             />
-            <JobCards lang={lang} translations={translations} image="img/faro.PNG" />
+            <JobCards lang={lang} translations={translations} image="img/faro.PNG"
+              link="https://farocastelldefels.com" 
+             />
           </section>
         </div>
       )}

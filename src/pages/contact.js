@@ -22,10 +22,10 @@ function ContactPage({lang, translations}) {
 
         <section className={isMobile ? "flex-column" : "flex-1"}>
           <Link
-            to="mailto:peredevelops@gmail.com"
+            to="mailto:info@peremartinezibar.com"
             className="no-link footer-contacts"
           >
-            peredevelops@gmail.com
+            info@peremartinezibar.com
           </Link>
           <br></br>
           <br></br>
