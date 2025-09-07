@@ -26,7 +26,7 @@ function Header({lang, translations, changeLanguage}) {
             <Link className="underline" to={`/peremartinezibar?lang=${lang}`} onClick={handleLinkClick}>Pere Martínez Ibar</Link>
             <Link className="underline" to={`/myjob?lang=${lang}`} onClick={handleLinkClick}>{translations[lang].jobtitle}</Link>
             <Link className="underline" to={`/clients?lang=${lang}`} onClick={handleLinkClick}>{translations[lang].clientstitle}</Link>
-            <Link className="underline" target="_blank" rel="nofollow" to={`https://blackjack-arena.com`} onClick={handleLinkClick}>{translations[lang].blackjacktitle}</Link>
+            <Link className="underline" to={`/mygames`} onClick={handleLinkClick}>{translations[lang].gamestitle}</Link>
             <Link className="underline" to={`/contact?lang=${lang}`} onClick={handleLinkClick}>{translations[lang].contacttitle}</Link>
            
           </div>

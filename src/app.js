@@ -7,6 +7,7 @@ import OurClientsPage from "./pages/ourclients";
 import OurJobPage from "./pages/ourjob";
 import ThePopcornPage from "./pages/thepopcorn";
 import Error404 from "./pages/Error404";
+import MyGames from "./pages/my-games";
 
 const translations = {
     en: {
@@ -15,6 +16,7 @@ const translations = {
         jobtitle:"My works",
         clientstitle:"Clients",
         contacttitle:"Contact me",
+        gamestitle:"My games",
         blackjacktitle:"BlackJack Simulator",
         knowme:"Know me",
         quote:"Programmer specialized in web page development",
@@ -29,6 +31,7 @@ const translations = {
         jobtitle:"Mis trabajos",
         clientstitle:"Clientes",
         contacttitle:"Contáctame",
+        gamestitle:"Mis juegos",
         blackjacktitle:"Simulador de BlackJack",
         knowme:"Conóceme",
         quote:"Programador especializado en el desarrollo de páginas web",
@@ -43,6 +46,7 @@ const translations = {
         jobtitle:"La meva feina",
         clientstitle:"Clients",
         contacttitle:"Contacta'm",
+        gamestitle:"Els meus jocs",
         blackjacktitle:"Simulador de BlackJack",
         knowme:"Coneix-me",
         quote:"Programador especialitzat en el desenvolupament de pàgines web",
@@ -80,6 +84,7 @@ function App () {
         <Route exact path="/clients" element={<OurClientsPage lang={selectedLang} translations={translations} />} />
         <Route exact path="/myjob" element={<OurJobPage lang={selectedLang} translations={translations} />} />
         <Route exact path="/peremartinezibar" element={<ThePopcornPage lang={selectedLang} translations={translations} />} />
+        <Route exact path="/mygames" element={<MyGames lang={selectedLang} translations={translations} />} />
         <Route path="*" element={<Error404 lang={selectedLang} translations={translations}/>} />
       </Routes>
     </div>

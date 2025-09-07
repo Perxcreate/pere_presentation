@@ -117,6 +117,7 @@ p {
 
 .dropdown-content a:hover {
   letter-spacing: 3px;
+  transition-duration: 1s;
 }
 
 .dropbtn {
@@ -185,6 +186,11 @@ p {
   font-family: "bolkit";
 }
 
+.mobile-space {
+  margin: 8px 0;
+}
+
+
 .linea1 {
   flex-grow: 1;
   border-bottom: 3px solid rgb(255, 255, 255);
@@ -247,7 +253,7 @@ p {
     -ms-user-select:none;
     user-select:none;
   visibility: hidden;
-  width: 120px;
+  width: 140px;
   background-color: #000;
   color: #fff;
   border: solid 2px white;

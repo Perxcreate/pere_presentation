@@ -1,15 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useIsMobile from "../hooks/useIsMobile";
 import "./index.css";
 
 function IndexPage({lang, translations}) {
   console.log(lang, translations)
+  const isMobile = useIsMobile(); 
   return (
     <div>
       <main className="home">
         <div className="flex home-container-1">
           <span className="linea1"></span>
-          <span className="home-titles">
+          <span className={`home-titles ${isMobile ? "mobile-space" : ""}`}>
             <Link className="no-link" to={`/peremartinezibar?lang=${lang}`}>
               <p>Pere Martínez Ibar</p>
             </Link>
@@ -19,13 +21,13 @@ function IndexPage({lang, translations}) {
 
         <div className="flex">
           <span className="linea1"></span>
-          <span className="home-titles">
+          <span className={`home-titles ${isMobile ? "mobile-space" : ""}`}>
             <Link className="no-link" to={`/myjob?lang=${lang}`}>
               <p>{translations[lang].jobtitle}</p>
             </Link>
           </span>
           <span className="linea2"></span>
-          <span className="home-titles">
+          <span className={`home-titles ${isMobile ? "mobile-space" : ""}`}>
             <Link className="no-link" to={`/clients?lang=${lang}`}>
               <p>{translations[lang].clientstitle}</p>
             </Link>
@@ -34,9 +36,9 @@ function IndexPage({lang, translations}) {
         </div>
         <div className="flex">
           <span className="linea1"></span>
-        <span className="home-titles">
-            <Link className="no-link" target="_blank" rel="nofollow" to={`https://blackjack-arena.com`}>
-              <p>{translations[lang].blackjacktitle}</p>
+        <span className={`home-titles ${isMobile ? "mobile-space" : ""}`}>
+            <Link className="no-link" to={`/mygames?lang=${lang}`}>
+              <p>{translations[lang].gamestitle}</p>
             </Link>
           </span>
           <span className="linea2"></span>
@@ -44,7 +46,7 @@ function IndexPage({lang, translations}) {
         </div>
         <div className="flex">
           <span className="linea1"></span>
-          <span className="home-titles">
+          <span className={`home-titles ${isMobile ? "mobile-space" : ""}`}>
             <Link className="no-link" to={`/contact?lang=${lang}`}>
               <p>{translations[lang].contacttitle}</p>
             </Link>
