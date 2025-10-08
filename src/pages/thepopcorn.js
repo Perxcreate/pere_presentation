@@ -5,7 +5,7 @@ import useIsMobile from "../hooks/useIsMobile";
 function ThePopcornPage({lang, translations}) {
   const isMobile = useIsMobile();
   return (
-    <div>
+    <div className="space-bg">
       <Title title={translations[lang].knowme} />
       <main className={isMobile ? "flex-column" : "flex around"}>
         <section className={isMobile ? "mobile-knowme" : "flex-30"}>

@@ -6,7 +6,7 @@ import useIsMobile from "../hooks/useIsMobile";
 function OurJobPage({lang, translations}) {
   const isMobile = useIsMobile();
   return (
-    <div>
+    <div className="space-bg">
       {isMobile ? (
         <main>
           <Title title={translations[lang].jobtitle} />

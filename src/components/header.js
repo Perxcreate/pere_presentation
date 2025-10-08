@@ -22,7 +22,6 @@ function Header({lang, translations, changeLanguage}) {
           </button>
           <div className={`dropdown-content ${isDropdownOpen ? 'show' : ''}`}>
             <Link className="underline" to={`/?lang=${lang}`} onClick={handleLinkClick}>{translations[lang].hometitle}</Link>
-
             <Link className="underline" to={`/peremartinezibar?lang=${lang}`} onClick={handleLinkClick}>Pere Martínez Ibar</Link>
             <Link className="underline" to={`/myjob?lang=${lang}`} onClick={handleLinkClick}>{translations[lang].jobtitle}</Link>
             <Link className="underline" to={`/clients?lang=${lang}`} onClick={handleLinkClick}>{translations[lang].clientstitle}</Link>

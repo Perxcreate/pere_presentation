@@ -236,6 +236,20 @@ p {
 
 /* My job */
 
+.space-bg{
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  background-image: url(../../public/img/background-stars.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
 .img-job {
   width: 40vw;
   border-radius: 15px;
@@ -310,11 +324,43 @@ p {
   padding: 0 10vw 10vh 0vw;
 }
 
+/* My Games */
+
+.galaxy-bg {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  margin: 0;
+  background-image: url(../../public/img/fondo_de_galaxia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
+
 /*clientes*/
+
+.nevulosa-bg{
+ min-height: 100%;
+  width: 100vw;
+  position: absolute;
+  margin: 0;
+  background-image: url(../../public/img/fondo_de_nevulosa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
 .logos2 {
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background-color: #bbbbbb;
+  background-color: rgb(187, 187, 187, 0.7); 
 }
 
 .logo-clients {
@@ -322,6 +368,9 @@ p {
 }
 .logo-clients2 {
   width: 160px;
+}
+.logo-clients3 {
+  width: 180px;
 }
 
 /* Contact*/

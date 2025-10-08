@@ -6,7 +6,7 @@ import Tooltip from "../components/tooltip";
 function OurClientsPage({lang, translations}) {
   const isMobile = useIsMobile();
   return (
-    <main>
+    <main className="nevulosa-bg">
       <Title title={translations[lang].clientstitle} />
 
       <div className="logos">
@@ -21,13 +21,12 @@ function OurClientsPage({lang, translations}) {
           <a href="https://suntakabarcelona.com" target="_blank" rel="nofollow">
             <img className="logo-clients" src="img/logo-suntaka.png" />
           </a>
+          <Tooltip text={translations[lang].soon}>
+            <img className="logo-clients3" src="img/logo_drama_new.png" />
+          </Tooltip>
           <a href="https://lxryfootball.surge.sh" target="_blank" rel="nofollow">
             <img className="logo-clients2" src="img/logo-lxry.png" />
           </a>
-          <Tooltip text={translations[lang].soon}>
-            <img className="logo-clients" src="img/logo-drama.png" />
-          </Tooltip>
-          
           <a href="https://farocastelldefels.com" target="_blank" rel="nofollow">
             <img className="logo-clients" src="img/faro_azul.png" />
             </a>

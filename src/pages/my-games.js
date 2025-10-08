@@ -6,7 +6,7 @@ import useIsMobile from "../hooks/useIsMobile";
 function MyGames ({lang, translations}) {
   const isMobile = useIsMobile();
   return (
-    <div>
+    <div className="galaxy-bg">
       {isMobile ? (
         <main>
           <Title title={translations[lang].gamestitle} />
