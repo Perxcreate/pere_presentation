@@ -12,7 +12,7 @@ function ContactPage({lang, translations}) {
         }
       >
         <section className={isMobile ? "flex-column" : "flex-1"}>
-          <img className="contact-logo" src="img/firma.png" />
+          <img className="contact-logo" src="img/firma_pere_martinez_ibar_white.png" />
 
           <div className="contact-title">
             <h2 className="start-contact">{translations[lang].startto}</h2>

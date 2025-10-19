@@ -12,7 +12,7 @@ function IndexPage({lang, translations}) {
         <div className="flex home-container-1">
           <span className="linea1"></span>
           <span className={`home-titles ${isMobile ? "mobile-space" : ""}`}>
-            <Link className="no-link" to={`/peremartinezibar?lang=${lang}`}>
+            <Link className="no-link" to={`/aboutme?lang=${lang}`}>
               <p>Pere Martínez Ibar</p>
             </Link>
           </span>
@@ -22,7 +22,7 @@ function IndexPage({lang, translations}) {
         <div className="flex">
           <span className="linea1"></span>
           <span className={`home-titles ${isMobile ? "mobile-space" : ""}`}>
-            <Link className="no-link" to={`/myjob?lang=${lang}`}>
+            <Link className="no-link" to={`/myworks?lang=${lang}`}>
               <p>{translations[lang].jobtitle}</p>
             </Link>
           </span>
@@ -58,7 +58,7 @@ function IndexPage({lang, translations}) {
         <div className="flex agency">
           <h1>{translations[lang].quote}</h1>
         </div>
-        <img className="logo" src="img/firma.png" alt="logo" />
+        <img className="logo" src="img/firma_pere_martinez_ibar_white.png" alt={translations[lang].altfirmapere} />
       </main>
     </div>
   );

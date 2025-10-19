@@ -436,7 +436,7 @@ p {
   width: 100vw;
   position: absolute;
   margin: 0;
-  background-image: url(../../public/img/404.jpg);
+  background-image: url(../../public/img/error404_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
@@ -485,7 +485,7 @@ p {
     border-radius: 5px;
   }
   .dropdown:hover .menu-icon {
-    content: url("../../public/img/menu2.png");
+    content: url("../../public/img/menu_light_bulb_on.png");
   }
 }
 
@@ -576,8 +576,12 @@ p {
     font-size: 120%;
     margin-left: 0%;
   }
-  .logo-clients {
+  .logo-clients, .logo-clients3 {
     width: 40vw;
+  }
+  .logo-clients2{
+    width:35vw;
+    padding-bottom: 20px;
   }
   .img-job {
     width: 80vw;

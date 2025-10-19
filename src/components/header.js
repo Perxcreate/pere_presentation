@@ -15,15 +15,15 @@ function Header({lang, translations, changeLanguage}) {
   return (
     <header>
       <div className="container-navbar">
-        <Translations changeLanguage={changeLanguage}/>
+        <Translations changeLanguage={changeLanguage} translations={translations} lang={lang}/>
         <div className="dropdown">
           <button className="dropbtn" onClick={handleDropdownToggle}>
-            <img className="menu-icon" src={isDropdownOpen ? "img/menu2.png" : "img/menu.png"} alt="Botón de menú desplegable" />
+            <img className="menu-icon" src={isDropdownOpen ? "img/menu_light_bulb_on.png" : "img/menu_light_bulb_off.png"} alt={translations[lang].menualt} />
           </button>
           <div className={`dropdown-content ${isDropdownOpen ? 'show' : ''}`}>
             <Link className="underline" to={`/?lang=${lang}`} onClick={handleLinkClick}>{translations[lang].hometitle}</Link>
-            <Link className="underline" to={`/peremartinezibar?lang=${lang}`} onClick={handleLinkClick}>Pere Martínez Ibar</Link>
-            <Link className="underline" to={`/myjob?lang=${lang}`} onClick={handleLinkClick}>{translations[lang].jobtitle}</Link>
+            <Link className="underline" to={`/aboutme?lang=${lang}`} onClick={handleLinkClick}>Pere Martínez Ibar</Link>
+            <Link className="underline" to={`/myworks?lang=${lang}`} onClick={handleLinkClick}>{translations[lang].jobtitle}</Link>
             <Link className="underline" to={`/clients?lang=${lang}`} onClick={handleLinkClick}>{translations[lang].clientstitle}</Link>
             <Link className="underline" to={`/mygames`} onClick={handleLinkClick}>{translations[lang].gamestitle}</Link>
             <Link className="underline" to={`/contact?lang=${lang}`} onClick={handleLinkClick}>{translations[lang].contacttitle}</Link>

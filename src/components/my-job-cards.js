@@ -9,7 +9,7 @@ function JobCards({ lang, translations, ...props}) {
           <img
             className="img-job"
             src={props.image}
-            alt="Imagen del sitio web"
+            alt={props.alt}
           />
         </a>
       ) : (
@@ -17,7 +17,7 @@ function JobCards({ lang, translations, ...props}) {
           <img
             className="img-job"
             src={props.image}
-            alt="Imagen del sitio web"
+            alt={props.alt}
           />
         </Tooltip>
       )}

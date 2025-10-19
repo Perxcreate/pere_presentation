@@ -19,7 +19,7 @@ function ThePopcornPage({lang, translations}) {
 
         <section>
           <div className=" flex-column">
-            <img className="img-group" src="img/pere.jpg" />
+            <img className="img-group" src="img/pere_martinez_ibar.jpg" alt="Pere Martínez Ibar"/>
           </div>
         </section>
       </main>
